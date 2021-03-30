@@ -5,36 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <section>
+    <ul role="list" aria-label="Accordion Control Group Buttons">
+      <li>
+        <button aria-controls="answer-1" aria-expanded="false">
+          How many team members can I invite?
+        </button>
+        <p id="answer-1" aria-hidden="true">
+          You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.
+        </p>
+      </li>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <li>
+        <button aria-controls="answer-2" aria-expanded="false">
+          What is the maximum file upload size?
+        </button>
+        <p id="answer-2" aria-hidden="true">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </li>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <li>
+        <button aria-controls="answer-3" aria-expanded="false">
+          How do I reset my password?
+        </button>
+        <p id="answer-3" aria-hidden="true">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </li>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      <li>
+        <button aria-controls="answer-4" aria-expanded="false">
+          Can I cancel my subscription?
+        </button>
+        <p id="answer-4" aria-hidden="true">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </li>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <li>
+        <button aria-controls="answer-5" aria-expanded="false">
+          Do you provide additional support?
+        </button>
+        <p id="answer-5" aria-hidden="true">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </li>
+    </ul>
+  </section>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.jasminewebb.dev/">Jasmine Webb</a>.
+  </footer>
 </body>
 </html>

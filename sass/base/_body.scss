@@ -1,3 +1,6 @@
 body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: grid;
+  grid-template-rows: auto 2em;
+  padding: 0 2em;
 }

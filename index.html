@@ -10,55 +10,69 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
-  <section>
-    <ul role="list" aria-label="Accordion Control Group Buttons">
-      <li>
-        <button aria-controls="answer-1" aria-expanded="false">
-          How many team members can I invite?
-        </button>
-        <p id="answer-1" aria-hidden="true">
-          You can invite up to 2 additional users on the Free plan. There is no limit on 
-          team members for the Premium plan.
-        </p>
-      </li>
+  <section class="card">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="images/bg-pattern-desktop.svg">
+      <img src="images/bg-pattern-mobile.svg" alt="A subtle diamond pattern background" class="card__bg">
+    </picture>
 
-      <li>
-        <button aria-controls="answer-2" aria-expanded="false">
-          What is the maximum file upload size?
-        </button>
-        <p id="answer-2" aria-hidden="true">
-          No more than 2GB. All files in your account must fit your allotted storage space.
-        </p>
-      </li>
+    <picture>
+      <source media="(min-width: 1440px)" srcset="images/illustration-woman-online-desktop.svg">
+      <img src="images/illustration-woman-online-mobile.svg" alt="A woman online" class="card__img">
+    </picture>
 
-      <li>
-        <button aria-controls="answer-3" aria-expanded="false">
-          How do I reset my password?
-        </button>
-        <p id="answer-3" aria-hidden="true">
-          Click “Forgot password” from the login page or “Change password” from your profile page.
-          A reset link will be emailed to you.
-        </p>
-      </li>
-
-      <li>
-        <button aria-controls="answer-4" aria-expanded="false">
-          Can I cancel my subscription?
-        </button>
-        <p id="answer-4" aria-hidden="true">
-          Yes! Send us a message and we’ll process your request no questions asked.
-        </p>
-      </li>
-
-      <li>
-        <button aria-controls="answer-5" aria-expanded="false">
-          Do you provide additional support?
-        </button>
-        <p id="answer-5" aria-hidden="true">
-          Chat and email support is available 24/7. Phone lines are open during normal business hours.
-        </p>
-      </li>
-    </ul>
+    <article class="card__content">
+      <h2>FAQ</h2>
+  
+      <ul role="list" aria-label="Accordion Control Group Buttons" class="accordion">
+        <li id="question-1">
+          <button onclick="window.location='#question-1'" aria-controls="answer-1" aria-expanded="false">
+            How many team members can I invite?
+          </button>
+          <p id="answer-1">
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </li>
+  
+        <li id="question-2">
+          <button onclick="window.location='#question-2'" aria-controls="answer-2" aria-expanded="false">
+            What is the maximum file upload size?
+          </button>
+          <p id="answer-2">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </li>
+  
+        <li id="question-3">
+          <button onclick="window.location='#question-3'" aria-controls="answer-3" aria-expanded="false">
+            How do I reset my password?
+          </button>
+          <p id="answer-3">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </li>
+  
+        <li id="question-4">
+          <button onclick="window.location='#question-4'" aria-controls="answer-4" aria-expanded="false">
+            Can I cancel my subscription?
+          </button>
+          <p id="answer-4">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </li>
+  
+        <li id="question-5">
+          <button onclick="window.location='#question-5'" aria-controls="answer-5" aria-expanded="false">
+            Do you provide additional support?
+          </button>
+          <p id="answer-5">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </li>
+      </ul>
+    </article>
   </section>
 
   <footer class="attribution">

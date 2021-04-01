@@ -1,7 +1,41 @@
-section {
-  background: white;
-  border-radius: 25px;
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
+.accordion {
+  padding-left: 0;
+
+  button {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--neutral-divider);
+    text-align: left;
+    font-size: 1.125em;
+    color: var(--primary-text-dark);
+    padding: 1.2em 0 1em;
+    
+    &::after {
+      content: url(../images/icon-arrow-down.svg);
+      float: right;
+    }
+  }
+  
+  p {
+    display: none;
+  }
+  
+  li:target {
+    button {
+      font-weight: 700;
+      border: none;
+      
+      &::after {
+        content: url(../images/icon-arrow-down.svg);
+        transform: rotate(180deg);
+      }
+    }
+    
+    p {
+      display: block;
+      padding-bottom: 1.2em;
+      border-bottom: 1px solid var(--neutral-divider);
+    }
+  }
 }

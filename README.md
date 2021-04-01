@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+*This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).*
 
 ## Table of contents
 
@@ -31,17 +31,18 @@ Users should be able to:
 
 ### Built with
 
-- ARIA properties
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- ARIA properties
 - Mobile-first workflow
+- CSS custom properties
+- CSS Grid
+- BEM + Sass
 
 ### What I learned
 
 #### `:target`
 
-The `:target` CSS pseudo-class can be used to conditionally style *targeted* elements in lieu of JavaScript. In this case, I can set each FAQ answer to `display: none`, unless it is the target.
+The `:target` CSS pseudo-class can be used to conditionally style *targeted* elements in lieu of JavaScript. In this case, I can set each FAQ answer to `display: none`, unless it is the target. The user can't close the question with this method, though.
 
 #### Accessibility
 
@@ -52,13 +53,16 @@ The `:target` CSS pseudo-class can be used to conditionally style *targeted* ele
   * and an `aria-expanded` attribute whose value is `true` when the answer is toggled, otherwise `false`.
 - [ ] Each answer should have...
   * an `id` that corresponds to the value of its `button`'s `aria-controls` attribute
-  * an `aria-hidden` attribute whose value is `true` when the content isn't displayed, otherwise `false` (this is probably unnecessary if the `display` CSS property is toggling between `none` and `block`)
+  * ~~an `aria-hidden` attribute whose value is `true` when the content isn't displayed, otherwise `false`~~ This is probably unnecessary since I will toggle between `display: none` and `display: block`.
 
 ### Useful resources
 
-- [MDN Web Docs | :target](https://developer.mozilla.org/en-US/docs/Web/CSS/:target) - Documentation for the `:target` CSS pseudo-class.
-- [Carnegie Museums of Pittsburgh Web Accessibility Guidelines v1.0 | Accordions](http://web-accessibility.carnegiemuseums.org/code/accordions) - Laid out guidelines, with explanations, of how to make accordions accessible.
-- [Andy Bell's Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset) - A good base for styling.
+| Link | Description |
+| ---- | ----------- |
+| [MDN Web Docs - :target](https://developer.mozilla.org/en-US/docs/Web/CSS/:target) | Documentation for the `:target` CSS pseudo-class. |
+| [Carnegie Museums of Pittsburgh Web Accessibility Guidelines v1.0 - Accordions](http://web-accessibility.carnegiemuseums.org/code/accordions) | Laid out guidelines, with explanations, of how to make accordions accessible. |
+| [Piccalilli - Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset) | A good base for styling. |
+| [Kevin Powell - Images on the Web Part 3](https://youtu.be/Rik3gHT24AM) | Explains how to make images responsive with the `picture` element. |
 
 ## Author
 

@@ -6,11 +6,19 @@ body {
   color: var(--neutral-text-300);
 }
 
-.attribution { 
-  font-size: 11px;
+h2 {
+  color: var(--primary-text-dark);
+  font-size: 2.66em;
+  font-weight: 700;
   text-align: center;
 }
 
+.attribution { 
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 100%, 85%);
 }

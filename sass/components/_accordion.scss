@@ -10,6 +10,11 @@
     font-size: 1.125em;
     color: var(--primary-text-dark);
     padding: 1.2em 0 1em;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--primary-text-soft);
+    }
     
     &::after {
       content: url(../images/icon-arrow-down.svg);
@@ -19,6 +24,7 @@
   
   p {
     display: none;
+    color: var(--neutral-text-500);
   }
   
   li:target {

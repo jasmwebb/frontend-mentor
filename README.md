@@ -10,6 +10,7 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [What still needs work](#what-still-needs-work)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -54,6 +55,11 @@ The `:target` CSS pseudo-class can be used to conditionally style *targeted* ele
 - [ ] Each answer should have...
   * an `id` that corresponds to the value of its `button`'s `aria-controls` attribute
   * ~~an `aria-hidden` attribute whose value is `true` when the content isn't displayed, otherwise `false`~~ This is probably unnecessary since I will toggle between `display: none` and `display: block`.
+
+### What still needs work
+
+- Hide the active answer by clicking on the question again
+- Prevent the card's width/height from growing and shrinking with each revealed answer
 
 ### Useful resources
 

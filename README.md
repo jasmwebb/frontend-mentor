@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -24,11 +24,11 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
-### Screenshot
+### Screenshots
 
 #### Mobile view
 
-![Mobile screenshot](screenshots/mobile_screenshot.png)
+<img src="screenshots/mobile_screenshot.png" alt="Mobile screenshot" width="375">
 
 #### Desktop view
 ![Desktop screenshot](screenshots/desktop_screenshot.png)

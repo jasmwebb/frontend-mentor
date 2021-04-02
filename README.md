@@ -26,7 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile view
+
+![Mobile screenshot](screenshots/mobile_screenshot.png)
+
+#### Desktop view
+![Desktop screenshot](screenshots/desktop_screenshot.png)
+
+*Although the pointer is hidden in the above screenshot, the red text reading "How do I reset my password?" demonstrates each accordion heading's hover state.*
 
 ## My process
 
@@ -38,6 +45,7 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - BEM + Sass
+- No JavaScript! (as per the bonus challenge)
 
 ### What I learned
 
@@ -47,12 +55,12 @@ The `:target` CSS pseudo-class can be used to conditionally style *targeted* ele
 
 #### Accessibility
 
-- [ ] Make the accordion an unordered list (`ul`) so a visually impaired user knows how many elements there are.
+- [x] Make the accordion an unordered list (`ul`) so a visually impaired user knows how many elements there are.
   * Give the `ul` an `aria-label` so they know it is an accordion.
-- [ ] Make each question a `button` so they are tab-able by keyboard and accessible to screen readers.
+- [x] Make each question a `button` so they are tab-able by keyboard and accessible to screen readers.
   * Give each `button` an `aria-controls` attribute associated with the `id` of the content it will reveal (its answer)...
   * and an `aria-expanded` attribute whose value is `true` when the answer is toggled, otherwise `false`.
-- [ ] Each answer should have...
+- [x] Each answer should have...
   * an `id` that corresponds to the value of its `button`'s `aria-controls` attribute
   * ~~an `aria-hidden` attribute whose value is `true` when the content isn't displayed, otherwise `false`~~ This is probably unnecessary since I will toggle between `display: none` and `display: block`.
 
